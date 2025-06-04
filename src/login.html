@@ -14,7 +14,8 @@
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        href="https://fonts.googleapis.com/cs
+        s?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
@@ -39,17 +40,21 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
+                                        <!-- Logo centrado -->
+                                        <img src="img/Logo de Tienda de Mascotas.png" alt="Logo"
+                                            class="img-fluid mb-4" style="max-width: 200px;">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+
+                                    <form name="login-form" class="user" action="backend/signin.php" method="post">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                               name="e_mail" id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter Email Address..."  required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                              name="p_assw" id="exampleInputPassword" placeholder="Password"  required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,9 +63,10 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button class="btn btn-primary btn-user btn-block">Login</button>
+                                        <!--<a href="index.html" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </a>-->
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google

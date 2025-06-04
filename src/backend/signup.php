@@ -7,6 +7,7 @@
    $email = $_POST['e_mail'];
    $passw = $_POST['p_assw'];
 
+   
 // INCRIPTAR CONTRASEÑA
    //$hashed_password = password_hash($passw, PASSWORD_DEFAULT);
    $hashed_password = $passw;
